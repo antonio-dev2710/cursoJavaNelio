@@ -1,0 +1,14 @@
+declaracao de varável
+
+int 5minutes x
+int _5minutes; certo
+
+sem acessento
+int salario;
+
+cammel case
+int salarioDoFuncionario;
+
+Pascal Case: ProductService
+para classes 
+Primeira letra maiuscula

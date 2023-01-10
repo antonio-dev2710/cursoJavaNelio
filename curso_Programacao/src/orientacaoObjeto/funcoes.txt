@@ -1,0 +1,22 @@
+Representa um processo que possui um significa
+
+vantagens: modularizacao,delegacao e reaproveitamento
+
+dados de entrada e saida 
+podem receber parametro ou argumento
+podem ou n retornar uma saida
+
+----------------------------------------------
+Definição de classe 
+É um tipo estruturado que pode conter (membros)
+Esses membros podem ser
+Atributos (dados/campos)
+ou 
+metodos (funçoes/opraçoes)
+
+A classe tbm pode prover muitos outros recursos
+construtores
+sobrecarga
+Encapsulamento
+herança
+polimorfismo

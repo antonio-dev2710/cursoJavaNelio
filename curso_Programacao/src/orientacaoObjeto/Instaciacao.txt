@@ -1,0 +1,13 @@
+A declaração de variáveis  são criadas em um local da memoria chamda stack onde são criadas as variáveis estáticas
+
+TRIANGLE x,y
+
+druante a execução do programa pode fazer uma alocação dinamica de memória
+a partir da instaciação vai ser criado um objeto do tipo triangle em outra area de memoria chamada heap-(area de memoria que é criada os objetos dinamicos)
+x= new TRIANGLE();
+apos a intaciação na classe stack vai ta o endereço de memoria nesse caso referenciando o endereço de memoria referente a área heap
+
+Objetos : são intancias da classe
+
+
+

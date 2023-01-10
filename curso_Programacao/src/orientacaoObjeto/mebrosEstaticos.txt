@@ -1,0 +1,12 @@
+#mebros estáticos
+
+tambem chamados membros de classe
+em opsiçao a membros de instacia
+
+Não precisam de objeto para serem chamados. São chamados a partir do próprio nome da classe 
+
+aplicações comuns:
+classes utilitárias---ex: Math.sqrt(double)
+declaração de constantes
+
+Uma classe que possui somente mebros estáticos, pode ser uma classe estático tambem. Essa classe n pode ser intaciada

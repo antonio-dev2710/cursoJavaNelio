@@ -1,0 +1,3 @@
+& ="E" bit a bit
+| ="OU"bit a bit
+^ ="XOR"bit a bit:para ser verdadeiro:c1=V e c2=F
