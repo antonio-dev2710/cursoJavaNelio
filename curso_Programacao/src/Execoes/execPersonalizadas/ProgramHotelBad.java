@@ -36,9 +36,7 @@ public class ProgramHotelBad {
             System.out.println();
             System.out.println("Enter date to update the reservation: ");
 
-            System.out.println("Room number: ");
-            number = sc.nextInt();
-
+           
             System.out.println("Check-in date (dd/MM/yyyy) ");
 
             checkIn = sdf.parse(sc.next());
@@ -46,21 +44,14 @@ public class ProgramHotelBad {
             System.out.println("Check-out date (dd/MM/yyyy) ");
             checkOut = sdf.parse(sc.next());
 
-            //verifar em relação a data de agora
-            Date now =new Date();
-            if(checkIn.before(now) || checkOut.before(now)){
-                System.out.println("Must be future Dates");
+            String error = reservation.updateDates(checkIn, checkOut);
+            if(error!=null){
+                System.out.println("Error in reservation: " + error);
             }
-            else if(!checkOut.after(checkIn)){
-                System.out.println("Error in reservation: Check-out date must be after check-in date");
-            }else{
-                reservation.updateDates(checkIn, checkOut);
-
+            else{
                 System.out.println(reservation);
             }
-
            
-
 
         }
 
