@@ -1,0 +1,126 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Programs",
+            "request": "launch",
+            "mainClass": "Execoes.blocoFinally.Programs",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProgramAccount",
+            "request": "launch",
+            "mainClass": "Execoes.execPersonalizadas.programExcp.ProgramAccount",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProgramHotelBad",
+            "request": "launch",
+            "mainClass": "Execoes.execPersonalizadas.programExcp.ProgramHotelBad",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch method02",
+            "request": "launch",
+            "mainClass": "Execoes.stackTraceDemo02.method02",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch cast",
+            "request": "launch",
+            "mainClass": "estrturaSequencial.cast",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch programacao",
+            "request": "launch",
+            "mainClass": "estrturaSequencial.programacao",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch saidaFormt",
+            "request": "launch",
+            "mainClass": "estrturaSequencial.saidaFormt",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch condNao",
+            "request": "launch",
+            "mainClass": "estruturaCond.condNao",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch condTernaria",
+            "request": "launch",
+            "mainClass": "estruturaCond.condTernaria",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch exer01",
+            "request": "launch",
+            "mainClass": "estruturaRepet.exer01",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch repetWhile",
+            "request": "launch",
+            "mainClass": "estruturaRepet.repetWhile",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
+            "mainClass": "orientacaoObjeto.Program",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProgramOO",
+            "request": "launch",
+            "mainClass": "orientacaoObjeto.ProgramOO",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProgramProduct",
+            "request": "launch",
+            "mainClass": "orientacaoObjeto.ProgramProduct",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch bitwise",
+            "request": "launch",
+            "mainClass": "outrosTopicsBasic.bitwise",
+            "projectName": "curso_Programacao_ee46161a"
+        },
+        {
+            "type": "java",
+            "name": "Launch funcoesString",
+            "request": "launch",
+            "mainClass": "outrosTopicsBasic.funcoesString",
+            "projectName": "curso_Programacao_ee46161a"
+        }
+    ]
+}
