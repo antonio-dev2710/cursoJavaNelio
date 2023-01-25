@@ -1,7 +1,9 @@
 package trabArquivos.desafio;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,54 +18,53 @@ public class LerArq {
         Produto p3 = new Produto("Iphone X", 900.00, 2);
         Produto p4 = new Produto("Samsung Galaxy", 850.00, 2);
 
-        List <Produto> listaProduto  = new ArrayList<>();
+        List<Produto> listaProduto = new ArrayList<>();
         listaProduto.add(p1);
         listaProduto.add(p2);
         listaProduto.add(p3);
         listaProduto.add(p4);
 
-        //criar um arquivo .csv
-        String path="c:\\temp\\sources.csv";
+        // criar um arquivo .csv
+        String path = "c:\\temp\\sources.csv";
 
-        try(BufferedWriter bw = new BufferedWriter(new FileWriter(path))){
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            String str = br.readLine();
+            while (str != null) {
 
-            for(Produto p: listaProduto){
-                String str = String.valueOf(p.toString());
-                str.split(",");
-                bw.write(str);
-                //quebra de linha
-                bw.newLine();
+                System.out.println(str);
+                str = br.readLine();
+
             }
-            //criar uma sub pasta
-            String strPath ="c:\\temp";
+            // criar uma sub pasta
 
-            boolean sucess = new File(strPath+"\\out").mkdir();
-
-            System.out.println("Directory created succesfully:"+sucess);
-        }
-        catch(IOException e){
-            System.out.println("Error:"+e.getMessage());
+        } catch (IOException e) {
+            System.out.println("Error:" + e.getMessage());
         }
 
-        //saida
-        //criar um arquivo .csv
-        path="c:\\temp\\out\\summary.csv";
+        // saida
+        // criar um arquivo .csv
+        String strPath = "c:\\temp";
 
-        try(BufferedWriter bw = new BufferedWriter(new FileWriter(path))){
+        boolean sucess = new File(strPath + "\\out").mkdir();
+        if(sucess){
+            System.out.println("Directory created succesfully:" + sucess);
+        }
+       
+        path = "c:\\temp\\out\\summary.csv";
 
-            for(Produto p: listaProduto){
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
+
+            for (Produto p : listaProduto) {
                 String str = String.valueOf(p.outFiles());
-                
+
                 bw.write(str);
-                //quebra de linha
+                // quebra de linha
                 bw.newLine();
             }
-            
-        }
-        catch(IOException e){
-            System.out.println("Error:"+e.getMessage());
-        }
 
+        } catch (IOException e) {
+            System.out.println("Error:" + e.getMessage());
+        }
 
     }
 }
