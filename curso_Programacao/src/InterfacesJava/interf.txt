@@ -1,5 +1,5 @@
 
-#Interface é um tipo que difine um conjunto de operraçãpes que uma classe deve implementar
+#Interface é um tipo que difine um conjunto de operações que uma classe deve implementar
 
 A interface estabelece um contrato que a classe deve cumprir
 

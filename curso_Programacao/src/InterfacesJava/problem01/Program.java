@@ -30,6 +30,7 @@ public class Program {
         Double pricePerDay = sc.nextDouble();
 
         RentalService rentalService = new RentalService(pricePerHour, pricePerDay, new BrazilTaxService());
+                //essa instacia sera injetada na classe RentalService por meio do construtor
 
         rentalService.processInvoice(cr);
 
