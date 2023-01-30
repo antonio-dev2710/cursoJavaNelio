@@ -16,7 +16,7 @@ public class Installment {
     @Override
     public String toString() {
         
-        return dueDate.format(sdf) + "-" + amount + "]";
+        return dueDate.format(sdf) + " - " + amount + "]";
     }
     public Installment(LocalDate start, double amount) {
         this.dueDate = start;

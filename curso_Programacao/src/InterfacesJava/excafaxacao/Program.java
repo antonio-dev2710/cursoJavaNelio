@@ -13,6 +13,7 @@ import java.util.Scanner;
 import InterfacesJava.excafaxacao.models.Contract;
 import InterfacesJava.excafaxacao.models.Installment;
 import InterfacesJava.excafaxacao.service.ContractService;
+import InterfacesJava.excafaxacao.service.OnlinePaymentService;
 import InterfacesJava.excafaxacao.service.PaypalService;
 
 public class Program {
@@ -29,39 +30,12 @@ public class Program {
         System.out.println("how many months ?");
         int months = sc.nextInt();
 
-        // divisao das parcelas
-        double parcela = valorTotal / months;
 
-        ContractService contractService= new ContractService();
-
-       
-        
-
-        // lista de parcelas
-        List<Installment> listIntallments = new ArrayList<>();
-        for (int i = 1; i <= months; i++) {
-            
-            PaypalService paypalService = new PaypalService();
-            // parcelas
-            double valorJuros = paypalService.interest(200.0, i);
-            parcela=valorJuros;
-
-            double valorTaxaPag = paypalService.paymnetFee(parcela);
-
-            // total por parcela
-            parcela = parcela + valorTaxaPag;
-            
-            
-            LocalDate oneMonthLater = start.plusMonths( i );
-            
-        
-            Installment installment = new Installment(oneMonthLater, parcela);
-
-            listIntallments.add(installment);
-        }
-        contract.setInstallments(listIntallments);
+        ContractService contractService= new ContractService(new PaypalService() );
 
         contractService.processContract(contract, months);
+
+
         sc.close();
     }
 

@@ -2,26 +2,21 @@ package InterfacesJava.excafaxacao.models;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Contract {
-    int number;
-    LocalDate date;
-    double totalValue;
-    List<Installment> installments;
+    private int number;
+    private LocalDate date;
+    private double totalValue;
+    private List<Installment> installments = new ArrayList<>();
 
     public List<Installment> getInstallments() {
         return installments;
     }
 
-    public void setInstallments(List<Installment> installments) {
-        this.installments = installments;
-    }
-    
-    
-    
-    
+   
     public Contract(int number, LocalDate start, double totalValue) {
         this.number = number;
         this.date = start;
