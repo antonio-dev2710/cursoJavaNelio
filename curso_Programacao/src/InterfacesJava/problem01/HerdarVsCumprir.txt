@@ -1,0 +1,9 @@
+#Aspectos em comum entre herança e interfaces
+
+relaçao é um 
+generalização/especialização
+polimorfismo
+
+#Diferença fundamental
+herança=>reuso
+interface=>contrato a ser cumprido
