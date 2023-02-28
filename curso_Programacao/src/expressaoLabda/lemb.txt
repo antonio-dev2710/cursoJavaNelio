@@ -1,0 +1,15 @@
+Inteface funcional é aquela interface que tem apenas um método
+podendo ter metodos defoult e metodos estacios
+
+Em programação funcional, expressão lambda corresponde a uma
+função anônima de primeira classe.
+
+Interface funcional
+
+É uma interface que possui um único método abstrato. Suas
+implementações serão tratadas como expressões lambda.
+
+
+A interface funcional tem um mapeamento direto com expressão lambda
+-----------------------------------------------------------------------
+As lambdas expressions são um recurso que surgiu no Java 8. Trata-se de métodos ou funções anônimas as quais geralmente não possuem um nome e não pertencem a nenhuma classe. 

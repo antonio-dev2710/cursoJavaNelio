@@ -1,0 +1,7 @@
+
+#DEFAULT METHODS
+
+A intençaõ básica é promover implementação padrão para métodos, de modo a evitar
+
+1)Repetição de implementação em toda classe que implemente  a interface
+2)A necessidade de se criar classes abstratas para prover reuso da implementação

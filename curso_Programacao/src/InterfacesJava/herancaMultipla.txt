@@ -1,0 +1,5 @@
+
+#Herança múltipla não é permitida na maioria das linguagens
+
+#Problema do diamante herança multipla
+

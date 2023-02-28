@@ -1,0 +1,2 @@
+Predicate
+É uma interface funcional parametrizada com o tipo T e tem um metodo abstrato accept de tipo void

@@ -1,0 +1,4 @@
+Intefarce funcional que tem dois parametros vum T e um tipo R 
+
+um metodo aply que recebe um parametro do tipo T e retorna R
+
