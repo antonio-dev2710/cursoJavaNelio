@@ -2,3 +2,12 @@ Intefarce funcional que tem dois parametros vum T e um tipo R
 
 um metodo aply que recebe um parametro do tipo T e retorna R
 
+//A função map  é uma função que aplica uma função a todos elementos de uma stream(é uma sequencia de dados)
+
+//A função map não funcioana a apartir de uma lista funciona a partir de uma stream
+
+//Precisa converter a lista para stream para aplicar o map e dps converter a stream para lista
+
+//list para stream:.stream()
+
+//Stream para list:.collect(Collrctors.toList())

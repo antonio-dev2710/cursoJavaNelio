@@ -14,14 +14,16 @@ public class App {
     list.add(new Product("Notbook", 87.0));
     list.add(new Product("Tablet", 50.0));
 
+    //implementação de interface
     //list.removeIf(new ProductPredicate());
+
     //refernciar para metodo metodo
 
-    //Reference method com método estático
-    //list.removeIf(Product::staticProductPredicate);
+    //Referencia para metodo com método estático
+    //list.removeIf(Prod com método não estático
+    // list.removeoduct::staticProductPredicate);
 
-    //Reference method com método não estático
-    // list.removeIf(Product::nonstaticProductPredicate);
+    //Reference methIf(Product::nonstaticProductPredicate);
 
     //expressão lambda declarada
     /* Predicate<Product> pred = p -> p.getPrice() >= 100;

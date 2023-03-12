@@ -15,8 +15,7 @@ public class App {
     list.add(new Product("Notbook", 87.0));
     list.add(new Product("Tablet", 50.0));
 
-   
-    //refernciar para calsse
+   //impelementação da interface
      //list.forEach(new PriceUpdateComsmer());
 
     //Reference method com método estático

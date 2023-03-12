@@ -3,7 +3,7 @@ package expressaoLabda.exemp01;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-
+//transpararencia referencial é quando o resultado da fução depende dos valores de enrada
 public class App {
     public static void main(String[] args) {
         List<Product> list = new ArrayList<>();
@@ -29,6 +29,7 @@ public class App {
         //list.sort(new MyComparator());
         //como argumento do sort foi passado um expresão lambda
         //p1 e p2 sao inferencia de tipos
+        //Comparator com sitarxe de expressão lambda 
          list.sort((p1,p2)-> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
 
         for(Product p: list){

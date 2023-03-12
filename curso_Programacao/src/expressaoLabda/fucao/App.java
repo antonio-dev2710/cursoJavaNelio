@@ -21,10 +21,11 @@ public class App {
     list.add(new Product("Notbook", 87.0));
     list.add(new Product("Tablet", 50.0));
 //criando uma instacia dentro da função map
-//A função map pega a coleção de valores e aplica na funcão
+
+
+
     //list.stream().map(new UpperCaseName());
-    //CONVERTER ESSA STREAM DE NOVO PARA LISTA
-    //atribuindo para uma lista de strings
+    
     //List<String> names = list.stream().map(new UpperCaseName()).collect(Collectors.toList());
 
     //List<String> names = list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
