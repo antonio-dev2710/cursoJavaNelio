@@ -1,0 +1,62 @@
+
+Stream é uma sequencia de elementos advinda de uma fonte de dados que oferece suporte a "operações agregadas"
+
+fonte de dados: coleção, array, função de iteração, recurso de E/S
+---------------------------------------------------------------------
+Stream é uma solução para processar sequencias de dados de forma:
+
+declarativa(iteração interna: escondida do programador)
+
+Parallel-friendly(imutável->thread safe)
+sem efeitos colaterais
+Sob demanda(lazy evaluation)
+
+Single-use: só pode ser "usada" uma vez
+
+Pipeline: operações em strams retornam novas streams. Então é possível
+criar uma cadeia de operações(fluxo de processo)
+---------------------------------------------------------------------
+O perações intermediárias e terminais
+
+O pipeline é composto por 0 ou mais operações intermediárias e uma terminal
+
+Operações intermediárias
+    Produz uma nova streams(encadeamento)
+    Só executa quando uma operação terminal é invocada(Lazy evaluation)
+    Operações intermediárias
+    • filter
+    • map
+    • flatmap
+    • peek
+    • distinct
+    • sorted
+    • skip
+    • limit (*)* short-circuit
+
+Operação terminal:
+
+    Produz um objeto não-stream(coleção ou outro)
+    Determina o fim do processamento da Stream
+    Operações terminais
+    • forEach
+    • forEachOrdered
+    • toArray
+    • reduce
+    • collect
+    • min
+    • max
+    • count
+    • anyMatch (*)
+    • allMatch (*)
+    • noneMatch (*)
+    • findFirst (*)
+    • findAny (*)
+-------------------------------------------------------
+Criar uma stream
+
+Basta chamar o método stream ou parallelStream() a partir de qualquer objeto Collection
+
+Outras formas de se criar uma stream incluem 
+    Stream.of
+    Stream.ofNullable
+    Stream.iterate
