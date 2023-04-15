@@ -6,7 +6,8 @@ public class Department implements Serializable{
     private Integer id;
     private String name;
 
-    //implements Serializable para nossos objeto serem transfomados em sequencia de bytes permintindo o nosso objeto seja gravado em arquivo, trafegado em rede..
+    //implements Serializable para nossos objeto serem transfomados em 
+    //sequencia de bytes permintindo o nosso objeto seja gravado em arquivo, trafegado em rede..
     public Department() {
     }
     
